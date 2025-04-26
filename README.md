@@ -1,21 +1,84 @@
-# 🥘 Food Order Website Complete Course
-Usaini yahuza food Ordering App Using Php
-<?php 
-//Start Session
-session_start();
+# Raufaz Kitchen - Online Food Ordering System
 
-//Create Constants to Store Non Repeating Values
-define('SITEURL', 'http://localhost/food-order/'); //Update the home URL of the project if you have changed port number or it's live on server
-define('LOCALHOST', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'food-order');
-    
-$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //Database Connection
-$db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database 
+[![Website](https://img.shields.io/badge/Website-Live-green)](https://github.com/UsmanRibadu/food-ordering-system)
 
-?>
-```
+An Online Food Ordering System developed for **Raufaz Kitchen**, designed to make food ordering easy, fast, and efficient.  
+Customers can browse meals, place orders, and track their order status online.
 
-6. Now, Open the project in your browser. It should run perfectly.
+---
+
+## 📋 Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## ✨ Features
+- User-friendly food menu display
+- Order placement and tracking
+- Admin panel to manage orders, categories, and menu items
+- Payment integration with Flutterwave
+- Email notification system
+- Delivery status tracking (Delivered/Not Delivered)
+- Responsive and mobile-friendly design
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL
+- **Payment Gateway:** Flutterwave
+- **Hosting:** (Specify if deployed)
+
+---
+
+## 📸 Screenshots
+| User Interface | Admin Dashboard |
+| :------------: | :--------------: |
+| ![User view](link-to-user-screenshot) | ![Admin view](link-to-admin-screenshot) |
+
+> *(Screenshots will be updated when available.)*
+
+---
+
+## 🔥 Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/UsmanRibadu/food-ordering-system.git
+    ```
+
+2. **Set up the database**
+    - Import the provided `.sql` file into your MySQL server (using phpMyAdmin or CLI).
+    - Update your `config/constants.php` file with your database credentials.
+
+3. **Configure your environment**
+    - Make sure PHP and MySQL are installed (use XAMPP, WAMP, MAMP, etc.).
+    - Start the Apache and MySQL server.
+
+4. **Access the app**
+    - Open your browser and navigate to:
+      ```
+      http://localhost/food-ordering-system/
+      ```
+
+---
+
+## 🚀 Usage
+- Customers can place orders and track delivery status.
+- Admins can:
+  - Add, update, and delete categories and food items.
+  - Manage customer orders.
+  - Confirm payments and delivery statuses.
+
+---
+
+## 📁 Folder Structure
 
